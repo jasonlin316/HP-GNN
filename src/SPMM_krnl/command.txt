@@ -1,0 +1,5 @@
+v++ -c -t hw --config ./u200.cfg -k Spmm -I../src/hw4cu ../src/hw4cu/fpga_top.cpp -o Spmm.xo 
+
+v++ -l -t hw --config ./u200.cfg  ./Spmm.xo --kernel_frequency 300 -o Spmm.xclbin
+
+g++ -Wall -g -std=c++11 ../src/host/host-amazon.cpp -o app.exe -I/opt/xilinx/xrt/include/ -I/tools/Xilinx/Vivado/2020.2/include/ -L/tools/Xilinx/Vivado/2020.2/lib/ -L/opt/xilinx/xrt/lib/ -lOpenCL -lpthread -lrt -lstdc++

@@ -1,11 +1,10 @@
 # HP-GNN
 
-Source code for ["HP-GNN: Generating High Throughput GNN Training Implementation on CPU-FPGA Heterogeneous Platform"](https://dl.acm.org/doi/10.1145/3490422.3502359), ACM/SIGDA FPGA 2022.
+Source code for ["HP-GNN: Generating High Throughput GNN Training Implementation on CPU-FPGA Heterogeneous Platform"](https://dl.acm.org/doi/10.1145/3490422.3502359), ACM/SIGDA FPGA 2022.  
 Details of hardware design can be found in the paper.
 
 ### Framework overview
-![framework](https://github.com/jasonlin316/HP-GNN/blob/main/pic/framework.pdf)
-
+![framework](https://github.com/jasonlin316/HP-GNN/blob/main/pic/framework.png)
 File structure:
 ```
 HP-GNN/
